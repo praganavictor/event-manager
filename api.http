@@ -1,0 +1,27 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+    "title": "Novo Evento 3",
+    "details": "detail text",
+    "maximumAttendees": 1
+}
+
+###
+
+POST http://localhost:3333/events/5b596fc7-54c1-4e0c-b050-5f15d9112526/attendees
+Content-Type: application/json
+
+{
+    "name": "Victor Pragana",
+    "email": "victorpragana2@gmail.com"
+}
+
+
+###
+
+GET http://localhost:3333/events/5c75899b-6329-4eb1-81b5-041496836b95
+
+###
+
+GET http://localhost:3333/attendees/1
